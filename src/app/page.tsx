@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Mynerve } from "next/font/google";
 import Image from "next/image";
 import {
@@ -186,28 +184,19 @@ export default function Home() {
                 </radialGradient>
               </defs>
             </svg>
-            <div className="mx-auto max-w-mds text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+            <div className="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+              <h2 className="text-3xl text-center font-bold tracking-tight text-primary sm:text-4xl">
                 Boost your sales.
                 <br />
                 All at an affordable cost.
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
                 Join our waitlist and be the first to try out the product when
                 we launch!
               </p>
-              <div className="max-w-sm">
+              <div className="w-full flex justify-center">
                 <WaitlistForm />
               </div>
-            </div>
-            <div className="relative mt-16 h-80 lg:mt-8">
-              <Image
-                className="absolute -left-60 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                src="app-dashboard.svg"
-                alt="App screenshot"
-                width={777}
-                height={446}
-              />
             </div>
           </div>
         </div>

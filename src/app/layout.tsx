@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Onest } from "next/font/google";
+import { Onest } from "next/font/google";
 import "./globals.css";
-import { NavBar } from "@/components/nav-bar";
 import { MainFooter } from "@/components/main-footer";
+import { MainNav } from "@/components/main-nav";
 
 const mainFont = Onest({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mainFont.className}>
-        <NavBar />
+        <MainNav />
         {children}
         <MainFooter />
       </body>

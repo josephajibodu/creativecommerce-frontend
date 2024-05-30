@@ -1,12 +1,12 @@
 "use client";
-
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Logo } from "./ui/logo";
 
 const navigation: { name: string; href: string }[] = [];
 
-const NavBar = () => {
+const MainNav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -16,12 +16,7 @@ const NavBar = () => {
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">CreativeCommerce</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <Logo />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -47,7 +42,7 @@ const NavBar = () => {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Get Started <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -94,7 +89,7 @@ const NavBar = () => {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Get Started
                 </a>
               </div>
             </div>
@@ -105,6 +100,6 @@ const NavBar = () => {
   );
 };
 
-NavBar.displayName = "NavBar";
+MainNav.displayName = "MainNav";
 
-export { NavBar };
+export { MainNav };
