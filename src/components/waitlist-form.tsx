@@ -6,6 +6,7 @@ import { Input } from "./ui/input";
 import { useFormState, useFormStatus } from "react-dom";
 import { PropsWithChildren, useEffect } from "react";
 import { toast } from "sonner";
+import { SvgSpinnersBarsRotateFade } from "./icons/spinner-bar";
 
 const initialState = {
   email: "",
@@ -56,11 +57,11 @@ function SubmitButton({ children }: PropsWithChildren) {
   return (
     <Button
       type="submit"
-      className="absolute right-1"
+      className="absolute right-1 w-32"
       variant={"default"}
       disabled={pending}
     >
-      {children}
+      {pending ? <SvgSpinnersBarsRotateFade /> : children}
     </Button>
   );
 }
