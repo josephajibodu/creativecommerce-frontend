@@ -58,8 +58,8 @@ export default function Home() {
       {/* Hero Section */}
       <div className="px-6 pt-24 lg:px-8">
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-24">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-orange-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          <div className="sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-orange-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20 text-center">
               Trusted by 50+ Businesses Already
             </div>
           </div>
@@ -160,31 +160,15 @@ export default function Home() {
       {/* How it works Section */}
       {/* Testimonials */}
       {/* About Us */}
+
       {/* Join the waitlist */}
-      <div className="">
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-white border px-6 pt-16 pb-16 sm:pb-0 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-            <svg
-              viewBox="0 0 1024 1024"
-              className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-              aria-hidden="true"
-            >
-              <circle
-                cx={512}
-                cy={512}
-                r={512}
-                fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                fillOpacity="0.7"
-              />
-              <defs>
-                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                  <stop stopColor="#ced675" />
-                  <stop offset={1} stopColor="#e48602" />
-                </radialGradient>
-              </defs>
-            </svg>
-            <div className="mx-auto text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="text-3xl text-center font-bold tracking-tight text-primary sm:text-4xl">
+      <div className="" id="join-waitlist">
+        <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-24 overflow-hidden">
+          <div className="relative isolate bg-transparent border border-orange-500 px-6 pb-16 sm:pb-0 sm:px-16 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 border-t-[80px] lg:border-t-[100px] border-t-transparent border-b-[80px] lg:border-b-[100px] border-b-transparent">
+            <hr className="border-orange-500 border-t w-[110%] border-l-[50px] border-l-transparent absolute top-0 right-0"></hr>
+            <hr className="border-orange-500 border-t w-[110%] border-r-[50px] border-r-transparent absolute bottom-0 left-0"></hr>
+            <div className="mx-auto text-center lg:mx-0 lg:flex-auto py-24 lg:py-32 lg:text-left">
+              <h2 className="text-3xl text-center font-bold tracking-tight sm:text-4xl text-orange-900">
                 Boost your sales.
                 <br />
                 All at an affordable cost.
@@ -193,8 +177,8 @@ export default function Home() {
                 Join our waitlist and be the first to try out the product when
                 we launch!
               </p>
-              <div className="w-full flex justify-center">
-                <WaitlistForm />
+              <div className="w-full max-w-sm mx-auto flex justify-center">
+                <WaitlistForm actionLabel="Join" />
               </div>
             </div>
           </div>

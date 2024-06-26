@@ -9,13 +9,13 @@ const MainFooter = () => {
             <Logo />
           </div>
           <p className="mt-5 text-center text-sm leading-6 text-slate-500">
-            © 2024 Cremir Inc. All rights reserved.
+            © 2024 Flitsell. All rights reserved.
           </p>
         </div>
         <div className="flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700 mt-12 md:mt-0">
-          <a href="#">Privacy policy</a>
-          <div className="h-4 w-px bg-slate-500/20"></div>
-          <a href="#">Changelog</a>
+          {/* <a href="#">Privacy policy</a>
+          <div className="h-4 w-px bg-slate-500/20"></div> */}
+          {/* <a href="#">Changelog</a> */}
         </div>
       </div>
     </footer>
