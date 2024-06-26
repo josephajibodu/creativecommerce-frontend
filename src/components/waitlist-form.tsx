@@ -21,7 +21,7 @@ const WaitlistForm = ({
   useEffect(() => {
     if (state.error) {
       toast.error(
-        "Error occured. It's me, not you. Please notify https://twitter.com/@joseph_ajibodu."
+        "Error occured. It's me, not you. Please notify https://twitter.com/@joseph_ajibodu"
       );
     } else {
       toast.success("You have successfully subscribed.");
