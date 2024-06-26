@@ -65,7 +65,7 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <h1 className="mt-4 max-w-3xl bg-gradient-to-br from-orange-700 to-orange-950 bg-clip-text pb-4 text-center text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:mt-6 md:pb-6 md:text-6xl lg:text-7xl">
+            <h1 className="mt-4 max-w-3xl bg-gradient-to-br from-orange-700 to-orange-950 bg-clip-text pb-4 text-center text-4xl font-bold tracking-tight text-transparent bg-clip-text-gradient sm:text-5xl md:mt-6 md:pb-6 md:text-6xl lg:text-7xl">
               Launch Your Online <br /> Store with Ease
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">

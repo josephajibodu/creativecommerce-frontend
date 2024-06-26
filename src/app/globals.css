@@ -78,4 +78,8 @@
     scroll-behavior: smooth;
   }
 
+  .bg-clip-text-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
