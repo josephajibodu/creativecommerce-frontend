@@ -12,7 +12,7 @@ const Logo = () => {
   return (
     <div className="flex items-center gap-3">
       <svg
-        className="text-orange-700 h-9 w-fit"
+        className="text-orange-700 h-9 w-9"
         width="219"
         height="236"
         viewBox="0 0 219 236"
@@ -38,7 +38,7 @@ const Logo = () => {
       </svg>
 
       <svg
-        className="text-gray-700 h-5 w-fit"
+        className="text-gray-700 h-5 w-auto"
         width="470"
         height="117"
         viewBox="0 0 470 117"
