@@ -4,6 +4,7 @@ import "./globals.css";
 import { MainFooter } from "@/components/main-footer";
 import { MainNav } from "@/components/main-nav";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const mainFont = Onest({ subsets: ["latin"] });
 
@@ -45,8 +46,9 @@ export default function RootLayout({
       <body className={mainFont.className}>
         <MainNav />
         {children}
-        <Toaster richColors position="top-right" />
         <MainFooter />
+        <Toaster richColors position="top-right" />
+        <Analytics />
       </body>
     </html>
   );
