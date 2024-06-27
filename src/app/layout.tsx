@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Onest } from "next/font/google";
 import "./globals.css";
-import { MainFooter } from "@/components/main-footer";
-import { MainNav } from "@/components/main-nav";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const mainFont = Onest({ subsets: ["latin"] });
 
@@ -44,11 +43,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mainFont.className}>
-        <MainNav />
         {children}
-        <MainFooter />
         <Toaster richColors position="top-right" />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

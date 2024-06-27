@@ -1,5 +1,4 @@
 import { Mynerve } from "next/font/google";
-import Image from "next/image";
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -13,6 +12,7 @@ const cursive = Mynerve({
   subsets: ["latin"],
   weight: "400",
 });
+
 const features = [
   {
     name: "Customizable Frontend",
